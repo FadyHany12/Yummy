@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f4ce500472.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="shortcut icon" href="./images/logo.png">
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Yummy</title>
+</head>
+<body class="bg-black">
+
+    <div id="loading" class=" bg-black " style="display: none ;">
+        <span class="loader"></span>   
+     </div>
+
+    <!-- ! Start Side-Nav-Menu -->
+    <section id="sideNavMenu" class="">
+
+        <div class="sideNav open min-vh-100 position-fixed d-flex top-0">
+
+            <div class="navBody open d-flex flex-column justify-content-between min-vh-100 p-4">
+                <div class="navLinks">
+                    <ul class="list-unstyled overflow-hidden">
+
+                        <li class="search py-2 animate__animated ">Search</li>
+                        <li class="categories py-2 animate__animated ">Categories</li>
+                        <li class="area py-2 animate__animated ">Area</li>
+                        <li class="ingredients py-2 animate__animated ">Ingredients</li>
+                        <li class="contact py-2 animate__animated ">Contact Us</li>
+                    </ul>
+                </div>
+
+                <div class="navFooter">
+
+                    <div class="icons text-white">
+
+                        <i class="fa-brands fa-facebook"></i>
+                        <i class="fa-brands fa-twitter"></i>
+                        <i class="fa-solid fa-globe"></i>
+                    </div>
+                    <div class="footer">
+                        <p class="text-white">Copyright Â© 2019 All Rights <br> Reserved.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="navHeader bg-white py-4 px-2 text-center text-black d-flex flex-column justify-content-between">
+
+                <img class="logo" src="./images/logo.png" alt="">
+                <i class="fa-solid open-close-icon fa-2x fa-align-justify"></i>
+                <div class="navHeader-icons">
+                    <i class="fa-solid fa-globe d-block"></i>
+                    <i class="fa-solid fa-share-nodes"></i>
+                </div>
+            </div>
+        </div>
+
+        <!-- ? Start Search -->
+        <div id="search" class="container w-75 d-none">
+
+            <div class="row py-4 g-4">
+                <div class="col-md-6">
+                    <input id="searchName" class="form-control bg-transparent text-white" type="text" placeholder="Search By Name">
+                </div>
+                <div class="col-md-6">
+                    <input id="searchId" maxlength="1" class="form-control bg-transparent text-white" type="text" placeholder="Search By First Letter">
+                </div>
+            </div>
+        </div>
+        <!-- ? End Search -->
+
+        <!-- ? Start categories  -->
+        <div id="categories" class="category d-none">
+            <div class="container">
+                <div class="row g-4 py-5">
+                </div>
+            </div>
+        </div>
+        <!-- ? End categories -->
+
+        <!-- ? Start Area -->
+        <div id="area" class="area d-none">
+            <div class="container">
+                <div class="row g-4 py-5">
+                </div>
+            </div>
+
+        </div>
+        <!-- ? End Area -->
+
+        <!-- ? Start ingredients -->
+            <div id="ingredients" class="ingredients d-none">
+                <div class="container">
+                    <div class="row g-4 py-5">
+                    </div>
+                </div>
+            </div>
+        <!-- ? End ingredients -->
+
+        <!-- ? Start Contact Us -->
+        <div id="contactUs" class="contact-us min-vh-100 d-flex justify-content-center align-items-center d-none">
+
+            <div class="container w-75 text-center">
+
+                <div class="row g-4">
+
+                    <div class="col-md-6">
+                        <input id="nameInput" type="text" class="form-control" placeholder="Enter Your Name">
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <input id="emailInput" type="email" class="form-control " placeholder="Enter Your Email">
+                    </div>
+                    <div class="col-md-6">
+                        <input id="phoneInput" type="text" class="form-control " placeholder="Enter Your Phone">  
+                    </div>
+                    <div class="col-md-6">
+                        <input id="ageInput" type="number" class="form-control " placeholder="Enter Your Age">
+                        
+                    </div>
+                    <div class="col-md-6">
+                        <input id="passwordInput" type="password" class="form-control " placeholder="Enter Your Password">
+                    </div>
+                    <div class="col-md-6">
+                        <input id="repasswordInput" type="password" class="form-control " placeholder="Repassword">
+                    </div>
+                </div>
+                <button id="submitBtn" disabled="" class="btn btn-outline-danger px-2 mt-3">Submit</button>
+            </div>
+        </div>
+        <!-- ? End Contact Us -->
+
+    </section>
+    <!-- ! End Side-Nav-Menu -->
+
+    <!-- ! Start Data -->
+    <section id="data" class="">
+
+        <div class="container">
+
+            <div class="row g-4 py-5">
+
+            </div>
+        </div>
+    </section>
+    <!-- ! End Data -->
+
+    <!-- ! Start details -->
+    <section id="details" class="d-none">
+
+        <div class="container">
+
+            <div class="row py-5 g-4">
+            </div>
+        </div>
+
+    </section>
+    <!-- ! End details -->
+
+    
+
+
+
+
+
+
+    
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/jquery-3.7.1.min.js"></script>
+    <script src="./js/index.js"></script>
+</body>
+</html>

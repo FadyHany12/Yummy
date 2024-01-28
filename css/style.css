@@ -1,0 +1,130 @@
+/* ! GLOBAL */
+h2 ,p , h3
+{
+    color: white;
+}
+
+i , #area .areaCard , #ingredients .ingredientsCard
+{
+    cursor: pointer;
+}
+#search input::placeholder
+{
+    color: #6C757D;
+}
+
+/* ! Start Side-Nav-Menu */
+
+.sideNav
+{
+    background-color: black;
+    z-index: 999;
+    left: 0;
+    transition: left .5s ease-in-out;
+}
+
+.sideNav.open
+{
+    left: -16rem;
+}
+.navLinks li 
+{
+    cursor: pointer;
+    color: white;
+}
+
+.navHeader .logo
+{
+    width: 3.125rem;
+}
+
+/* ! End Side-Nav-Menu */
+
+/* ! Start data */
+
+#data .row .meal 
+{
+    cursor: pointer;
+}
+
+.meal .mealLayer
+{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s all ease-in-out;
+}
+
+.meal:hover .mealLayer
+{   
+    top: 0;
+}
+
+/* ! End data */
+
+/* ! Start categories */
+#categories .row .meal-category 
+{
+    cursor: pointer;
+}
+
+.meal-category .mealLayer-category
+{
+    width: 100%;
+    height: 100%;
+    background-color: #f9f6f6ca;
+    top: 100%;
+    transition: .5s all ease-in-out;
+}
+
+.meal-category:hover .mealLayer-category
+{   
+    top: 0;
+}
+/* ! End categories */
+
+#loading {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 999;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.loader {
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    position: relative;
+    animation: pulse 1s linear infinite;
+}
+.loader:after {
+    content: '';
+    position: absolute;
+    width: 48px;
+    height: 48px;
+    border: 5px solid #FFF;
+    border-radius: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: scaleUp 1s linear infinite;
+}
+
+@keyframes scaleUp {
+    0% { transform: translate(-50%, -50%) scale(0) }
+    60% , 100% { transform: translate(-50%, -50%)  scale(1)}
+}
+@keyframes pulse {
+    0% , 60% , 100%{ transform:  scale(1) }
+    80% { transform:  scale(1.2)}
+}
